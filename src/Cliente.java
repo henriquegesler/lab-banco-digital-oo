@@ -1,10 +1,15 @@
 
-public class Cliente {
+public class Cliente extends Pessoa{
 
-	private String nome;
+	public Cliente(){
+	}
+
+	public Cliente(String n, String cpf){
+		super(n, cpf);
+	}
 
 	public String getNome() {
-		return nome;
+		return this.nome;
 	}
 
 	public void setNome(String nome) {

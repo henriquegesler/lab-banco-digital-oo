@@ -1,9 +1,11 @@
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Banco {
 
 	private String nome;
-	private List<Conta> contas;
+	private Set<Pessoa> clientes = new HashSet<>();
+	
 
 	public String getNome() {
 		return nome;
@@ -13,12 +15,15 @@ public class Banco {
 		this.nome = nome;
 	}
 
-	public List<Conta> getContas() {
-		return contas;
+	public Set<Pessoa> getClientes() {
+		return clientes;
 	}
 
-	public void setContas(List<Conta> contas) {
-		this.contas = contas;
+	public void setCliente(Set<Pessoa> clientes) {
+		this.clientes = clientes;
 	}
 
+	public void addClientes(Pessoa p){
+		this.clientes.add(p);
+	}
 }

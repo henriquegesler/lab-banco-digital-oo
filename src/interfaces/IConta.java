@@ -1,3 +1,4 @@
+package interfaces;
 
 public interface IConta {
 	
@@ -7,5 +8,5 @@ public interface IConta {
 	
 	void transferir(double valor, IConta contaDestino);
 	
-	void imprimirExtrato();
+	void imprimirExtrato(String name);
 }
